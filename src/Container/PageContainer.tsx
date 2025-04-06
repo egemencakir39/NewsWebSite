@@ -1,8 +1,15 @@
-import React from 'react'
+import { Container } from '@mui/material'
+import React, { ReactNode } from 'react'
 
-function PageContainer() {
+interface PageContainerProps {
+    children: ReactNode;
+}
+
+function PageContainer({ children }: PageContainerProps) {
     return (
-        <div>PageContainer</div>
+        <Container maxWidth="md" >
+            {children}
+        </Container>
     )
 }
 

@@ -2,7 +2,9 @@ import React from 'react'
 
 function NewsCard() {
     return (
-        <div>NewsCard</div>
+        <div style={{ padding: "150rem 0rem" }}>
+            NewsCard
+        </div>
     )
 }
 

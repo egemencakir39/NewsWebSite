@@ -1,0 +1,11 @@
+.marq {
+    padding: .5rem 0rem;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(255, 0, 0, 0.945);
+    color: rgb(0, 0, 0);
+}
+
+.marquee-item {
+    margin-right: 80px;
+}
