@@ -1,16 +1,11 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
 import axios from 'axios'
-
+import { Currency } from '../types/type';
+import { CurrencyState } from '../types/type';
 
 const BASE_URL = "https://api.freecurrencyapi.com/v1/latest";
 const BASE_KEY = "fca_live_FmnXKq4RVn4DcODkaOfqOGp4Rvyg9oUrSraND8fP";
-
-export interface CurrencyState {
-    currencyData: Record<string, number>;
-    loading: boolean;
-    error: string | null;
-}
 
 const initialState: CurrencyState = {
     currencyData: {},
@@ -19,7 +14,7 @@ const initialState: CurrencyState = {
 }
 export const getCurrency = createAsyncThunk("getCurrency", async () => {
     const response = await axios.get(`${BASE_URL}?apikey=${BASE_KEY}&base_currency=TRY`);
-    console.log(response.data.data)
+    console.log(response.data)
     return response.data.data;
 
 })

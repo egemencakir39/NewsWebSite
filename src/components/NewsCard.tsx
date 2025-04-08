@@ -1,9 +1,25 @@
 import React from 'react'
+import { Article } from '../types/type';
 
-function NewsCard() {
+interface NewsCardProps {
+    news: Article;
+}
+function NewsCard({ news }: NewsCardProps) {
+    if (!news) return null;
+
+    const { title, urlToImage, description } = news;
     return (
-        <div style={{ padding: "150rem 0rem" }}>
-            NewsCard
+        <div className='container'>
+            <span>
+                <div className='Image'>
+                    <img src={urlToImage} alt="PNG not found" />
+                </div>
+                <div className='title'>
+                    {title}
+                </div>
+
+            </span>
+
         </div>
     )
 }

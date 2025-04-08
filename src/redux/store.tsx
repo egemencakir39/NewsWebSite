@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
 import currencyReducer from '../redux/currencySlice'
+import newsReducer from '../redux/newsSlice'
 
 export const store = configureStore({
     reducer: {
-        currency: currencyReducer
+        currency: currencyReducer,
+        news: newsReducer
     },
 })
 
