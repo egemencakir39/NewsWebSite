@@ -20,7 +20,7 @@ function NewsCardList() {
                 </Box>
             ) : (
                 <>
-                    <div className='flex-row' style={{ flexWrap: 'wrap', marginTop: "25px" }}>
+                    <div className='flex-row' style={{ flexWrap: 'wrap', marginTop: "25px", display: 'flex', justifyContent: 'space-around' }}>
                         {newsData.map((news: Article, index: number) => (
                             <div key={news.url || index}>
                                 <NewsCard news={news} />

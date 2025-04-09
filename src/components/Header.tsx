@@ -6,7 +6,7 @@ import { FaMoneyBillTrendUp } from "react-icons/fa6";
 function Header() {
     return (
         <div className="header">
-            <Container maxWidth="xl" className="container">
+            <Container maxWidth="xl" className="Container">
                 <div className="logo">
                     <img src="src/assets/logo.svg" alt="Logo" />
                 </div>
@@ -14,6 +14,8 @@ function Header() {
                     <p>Spor</p>
                     <p>Siyaset</p>
                     <p>Ekonomi</p>
+                    <p>Son Dakika</p>
+                    <p>Sağlık</p>
                 </div>
                 <div className="input">
                     <input className="search-input" type="text" placeholder="Haber Ara.." />

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Article } from '../types/type';
+import '../css/newsCard.css'
 
 interface NewsCardProps {
     news: Article;

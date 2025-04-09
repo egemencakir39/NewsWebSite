@@ -7,7 +7,7 @@ interface PageContainerProps {
 
 function PageContainer({ children }: PageContainerProps) {
     return (
-        <Container maxWidth="md" >
+        <Container maxWidth="lg" >
             {children}
         </Container>
     )
