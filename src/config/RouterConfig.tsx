@@ -4,9 +4,9 @@ import { Routes, Route } from 'react-router-dom'
 
 function RouterConfig() {
     return (
-        <div>
-
-        </div>
+        <Routes>
+            <Route path='/' element={<Home />} />
+        </Routes>
     )
 }
 
